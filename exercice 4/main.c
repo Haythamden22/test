@@ -15,21 +15,17 @@ int main()
     plus_petit=tab[0];
 
     for(i=0;i<5;i++){
-        if(plus_petit<tab[i])
+        if(plus_petit>tab[i])
             plus_petit=tab[i];
 
 
         }
         plus_grand=tab[0];
         for(i=0;i<5;i++){
-            if(plus_grand>tab[i])
+            if(plus_grand<tab[i])
                 plus_grand=tab[i];
         }
-        printf("le plus grand :%d\n",plus_petit);
-        printf("le plus petit :%d\n",plus_grand);
+        printf("le plus grand :%d\n",plus_grand);
+        printf("le plus petit :%d\n",plus_petit);
     return 0;
 }
-
-
-
-       
