@@ -3,7 +3,7 @@
 
 int main()
 {
-   int i=0,plus_grand,plus_petit;
+   int i=0,plus_petit,plus_grand;
     float tab[5];
 
     printf("entrer les nombres :\n ");
@@ -12,20 +12,24 @@ int main()
         printf("tab[%d]\n",i);
         scanf("%f",&tab[i]);
     }
-    plus_grand=tab[0];
+    plus_petit=tab[0];
 
     for(i=0;i<5;i++){
-        if(plus_grand<tab[i])
-            plus_grand=tab[i];
+        if(plus_petit<tab[i])
+            plus_petit=tab[i];
 
 
         }
-        plus_petit=tab[0];
+        plus_grand=tab[0];
         for(i=0;i<5;i++){
-            if(plus_petit>tab[i])
-                plus_petit=tab[i];
+            if(plus_grand>tab[i])
+                plus_grand=tab[i];
         }
-        printf("le plus grand :%d\n",plus_grand);
-        printf("le plus petit :%d\n",plus_petit);
+        printf("le plus grand :%d\n",plus_petit);
+        printf("le plus petit :%d\n",plus_grand);
     return 0;
 }
+
+
+
+       
